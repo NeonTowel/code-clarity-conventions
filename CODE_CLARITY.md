@@ -11,6 +11,19 @@
 
 ### **Go** (`//` comments)
 
+- **Package File Headers**: Clarify intent at a glance:
+
+  ```go
+  // Package cache implements TTL-based object storage
+  // [Scope: DATA] [Status: Experimental]
+  // Uses SHA-256 for key derivation
+  package cache
+  ```
+
+  - First Line: Briefly state package purpose.
+  - Metadata Tags (optional but useful): Scope, stability, owner.
+  - Extended Context: Keep it under three lines.
+
 - **Functions/Structs**: One-liner describing *role*:
   
   ```go
